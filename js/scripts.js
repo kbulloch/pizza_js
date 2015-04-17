@@ -12,6 +12,9 @@ var Pizza = {
     if(this.size === "large") {
       price += 7;
     }
+    if(this.topping === "veggie") {
+      price += 2;
+    }
 
     return price;
   }
