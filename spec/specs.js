@@ -74,10 +74,6 @@ describe('Pizza', function() {
       expect(test_pizza.getPrice()).to.equal(21);
     });
 
-
-
-
   });
-
 
 });
