@@ -22,3 +22,26 @@ var Pizza = {
     return price;
   }
 }
+
+$(document).ready(function() {
+
+  $("#order").submit(function(event) {
+
+    event.preventDefault();
+
+    var order_size = $("select#size").val();
+    var order_topping = $("select#topping").val();
+
+    var new_pizza = Object.create(Pizza);
+
+    new_pizza.init();
+    new_pizza.size = order_size;
+    new_pizza.topping = order_topping;
+
+    var order_cost = new_pizza.getPrice();
+
+    $(".order-price").text(order_cost);
+
+  });
+
+});
