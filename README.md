@@ -2,6 +2,8 @@
 
 ####Javascript Assessment 2
 
+for Epicodus
+
 04.17.2015
 
 Kyle Bulloch
