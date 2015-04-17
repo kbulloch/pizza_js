@@ -23,27 +23,30 @@
 
             <div class="form-group">
               <select id="size">
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
+                <option value="Small">Small ($10)</option>
+                <option value="Medium">Medium ($13)</option>
+                <option value="Large">Large ($17)</option>
               </select>
             </div>
 
             <div class="form-group">
               <select id="topping">
-                <option value="cheese">Cheese</option>
-                <option value="veggie">Vegetarian</option>
-                <option value="pepperoni">Pepperoni</option>
+                <option value="Cheese">Cheese</option>
+                <option value="Vegetarian">Vegetarian (+$2)</option>
+                <option value="Pepperoni">Pepperoni (+$4)</option>
               </select>
             </div>
 
-            <button type="submit">Order</button>
+            <button type="submit" class="btn btn-success">Add to order</button>
           </form>
         </div>
 
       </div>
       <div class="col-sm-4">
-        <h3>Order total: $ <span class="order-price"></span></h3>
+        <h3>Order total: $ <span class="order-total"></span></h3>
+        <ul id="pizza-list">
+
+        </ul>
       </div>
     </div>
 

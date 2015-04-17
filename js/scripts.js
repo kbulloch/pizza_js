@@ -6,16 +6,16 @@ var Pizza = {
   getPrice: function() {
     var price = 10;
 
-    if(this.size === "medium") {
+    if(this.size === "Medium") {
       price += 3;
     }
-    if(this.size === "large") {
+    if(this.size === "Large") {
       price += 7;
     }
-    if(this.topping === "veggie") {
+    if(this.topping === "Vegetarian") {
       price += 2;
     }
-    if(this.topping === "pepperoni") {
+    if(this.topping === "Pepperoni") {
       price += 4;
     }
 
@@ -24,6 +24,8 @@ var Pizza = {
 }
 
 $(document).ready(function() {
+
+  var order_total = 0;
 
   $("#order").submit(function(event) {
 
@@ -38,9 +40,15 @@ $(document).ready(function() {
     new_pizza.size = order_size;
     new_pizza.topping = order_topping;
 
-    var order_cost = new_pizza.getPrice();
+    var pizza_cost = new_pizza.getPrice();
+    order_total += pizza_cost;
 
-    $(".order-price").text(order_cost);
+    $(".order-total").text(order_total);
+
+    $("#pizza-list").append("<li>" +
+      new_pizza.size + " " +
+      new_pizza.topping + ", $" +
+      pizza_cost + "</li>");
 
   });
 
