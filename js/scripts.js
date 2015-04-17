@@ -52,6 +52,13 @@ $(document).ready(function() {
 
     $("#pizza-order").show();
 
+    $(".clear-orders").click(function() {
+      $("#pizza-list").empty();
+      order_total = 0;
+      $("#pizza-order").hide();
+    });
+
   });
+
 
 });
