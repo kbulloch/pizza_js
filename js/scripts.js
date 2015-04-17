@@ -4,6 +4,12 @@ var Pizza = {
     this.topping = "";
   },
   getPrice: function() {
-    return 10;
+    var price = 10;
+    
+    if(this.size === "medium") {
+      price += 3;
+    }
+
+    return price;
   }
 }

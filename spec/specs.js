@@ -5,7 +5,17 @@ describe('Pizza', function() {
     it("will return a price of 10 for a small cheese pizza", function() {
       var test_pizza = Object.create(Pizza);
       test_pizza.init();
+      test_pizza.size = "small";
+      test_pizza.topping = "cheese";
       expect(test_pizza.getPrice()).to.equal(10);
+    });
+
+    it("will return a price of 13 for a medium cheese pizza", function() {
+      var test_pizza = Object.create(Pizza);
+      test_pizza.init();
+      test_pizza.size = "medium";
+      test_pizza.topping = "cheese";
+      expect(test_pizza.getPrice()).to.equal(13);
     });
 
   });
