@@ -10,7 +10,7 @@ Kyle Bulloch
 
 ##Description
 
-This app will allow the user to select various types of pizza and reflect the change in price.
+This app will allow the user to select various types of pizza and create an order that displays each pizza with its price.
 
 ##Setup
 
@@ -19,6 +19,10 @@ Clone the repository
 Open pizza.html in your browser of choice
 
 ###Technologies Used
+
+HTML, CSS, Javascript
+
+jQuery
 
 Mocha.js
 
