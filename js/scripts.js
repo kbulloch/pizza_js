@@ -15,6 +15,9 @@ var Pizza = {
     if(this.topping === "veggie") {
       price += 2;
     }
+    if(this.topping === "pepperoni") {
+      price += 4;
+    }
 
     return price;
   }
