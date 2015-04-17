@@ -50,6 +50,8 @@ $(document).ready(function() {
       new_pizza.topping + ", $" +
       pizza_cost + "</li>");
 
+    $("#pizza-order").show();  
+
   });
 
 });
