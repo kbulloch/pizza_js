@@ -18,6 +18,14 @@ describe('Pizza', function() {
       expect(test_pizza.getPrice()).to.equal(13);
     });
 
+    it("will return a price of 17 for a large cheese pizza", function() {
+      var test_pizza = Object.create(Pizza);
+      test_pizza.init();
+      test_pizza.size = "large";
+      test_pizza.topping = "cheese";
+      expect(test_pizza.getPrice()).to.equal(17);
+    });
+
   });
 
 
